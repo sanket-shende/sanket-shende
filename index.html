@@ -12,10 +12,11 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+        <link rel="shortcut icon" href="./assests/WhatsApp Image 2025-08-08 at 3.45.05 PM.jpeg" type="image/x-icon">
 	</head>
 	<body>
 		<div id="sidebar">
-			<img src="/assests/PHOTO.png" alt="img" />
+			<img src="/assests/WhatsApp Image 2025-08-08 at 3.45.05 PM.jpeg" alt="img" />
 			<h1>Sanket Shende</h1>
 			<p>MERN Full Stack Developer</p>
 			<hr />
@@ -63,14 +64,18 @@
 			</div>
 		</div>
 		<div id="container">
+            <div id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
 			<ul id="header">
-				<li class="nav-btn active" data-target="about">About</li>
-				<li class="nav-btn" data-target="resume">Resume</li>
-				<li class="nav-btn" data-target="project">Project</li>
-				<li class="nav-btn" data-target="contact">Contact</li>
+                <a href="#about"><li class="nav-btn">About</li></a>
+                <a href="#resume"><li class="nav-btn">Resume</li></a>
+				<a href="#project"><li class="nav-btn">Project</li></a>
+				<a href="#contact"><li class="nav-btn">Contact</li></a>
 			</ul>
-			<div id="about" class="content show">
-				<h2>About</h2>
+			<div id="about" onclick="openNav()">
 				<p>
 					Hi, I’m sanket shende a web developer who thrives on
 					transforming ideas into digital experiences. With a strong
@@ -100,11 +105,12 @@
 					into reality.
 				</p>
 			</div>
-			<div id="resume" class="content">
+            <hr>
+			<!-- <div id="resume">
 				<h2>Resume</h2>
-                <p>Under construction</p>
-			</div>
-			<div id="project" class="content">
+                <p> work is in progress...</p>
+			</div> -->
+			<div id="project">
 				<h2>Projects</h2>
 				<div class="box-container">
 					<div class="box">
@@ -117,13 +123,32 @@
                         <div class="box-title">Wanderlust</div>
                         <div class="box-detail">Air bnb clone</div>
 					</div>
+					<div class="box">
+                        <a href="#">
+                            <img
+                                src="/assests/todo app.png"
+                                alt="img"
+                            />
+                        </a>
+                        <div class="box-title">Todo App</div>
+                        <div class="box-detail">Air bnb clone</div>
+					</div>
 				</div>
 			</div>
-			<div id="contact" class="content">
+            <hr>
+			<div id="contact">
 				<h2>Contact</h2>
-				<p>
-                 Under construction
-                </p>
+				<form action="">
+                    <div class="inputs">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <textarea name="" id="" rows="10" cols="50" placeholder="Message..."></textarea>
+                    <button type="submit">
+                        Submit
+                    </button>
+                </form>
+                
 			</div>
 		</div>
 	</body>
