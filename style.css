@@ -19,6 +19,7 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
+    gap: 2rem;
 }
 
 #sidebar {
@@ -257,7 +258,7 @@ body {
 	align-items: center;
 	flex-direction: column;
 	width: 270px;
-	background-color: #0f0f0fc8;
+	background-color: #111;
 	border-radius: 10px;
 	color: #b3b4bd;
 	margin-right: 0.8rem;
@@ -310,7 +311,7 @@ body {
 }
 
 #contact form input {
-	background-color: #423f3f;
+	background-color: #111;
 	border: none;
 	padding: 1rem;
 	border-radius: 1rem;
@@ -323,7 +324,7 @@ body {
 
 #contact form textarea {
 	margin-top: 1rem;
-	background-color: #423f3f;
+	background-color: #111;
 	outline: none;
 	order: none;
 	border-radius: 1rem;
