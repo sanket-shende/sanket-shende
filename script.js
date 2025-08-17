@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	let btn = document.querySelectorAll(".nav-btn");
 	let hamburger = document.getElementById("hamburger");
 	let status = document.getElementById("status");
-    let name = document.getElementById("name")
 
 	hamburger.addEventListener("click", () => {
 		btn.forEach((b) => {
@@ -38,17 +37,4 @@ document.addEventListener("DOMContentLoaded", () => {
 					status.innerText = "❌ Failed to send message.";
 				});
 		});
-
-        //Text Animation
-        // console.log(name.innerText.length[0]);
-        
-        
-        setInterval( () =>{
-            for(let i=0; i<name.innerText.length; i++){
-                console.log(name[i]);
-                console.log();
-                
-                
-            }
-        },2000)
 });
