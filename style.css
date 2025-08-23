@@ -9,6 +9,12 @@
 
 html {
 	scroll-behavior: smooth;
+    animation: scroll linear;
+}
+
+@keyframes scroll {
+    from{ opacity: 0;}
+    to{ opacity: 1;}
 }
 
 body {
@@ -73,6 +79,18 @@ body {
 	padding: 1rem;
 	font-size: 1.5rem;
 	color: #f2f2f2;
+  	animation: nameAnimation 1s ease-out forwards;
+}
+
+@keyframes nameAnimation {
+   from {
+		scale: -1;
+		opacity: 0;
+	}
+	to {
+		scale: 1;
+		opacity: 1;
+	}
 }
 
 #sidebar p {
